@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+.box {
+	width: 1226px;
+	height: 4000px;
+	margin: auto;
+	background-color: rgb(241, 234, 234);
+}
+.left {
+	float: left;
+	width: 1226px;
+	height: 300px;
+	background-color: rgb(237, 237, 240);
+}
+.right {
+	float: right;
+	width: 613px;
+	height: 100px;
+	background-color: rgb(255, 255, 255);
+}
+.right li {
+	width: 234px;
+	height: 400px;
+	background-color: rgb(117, 185, 138);
+	float: left;
+	margin-left: px;
+	margin-bottom: 14px;
+}
+
+.left li {
+	width: 613px;
+	height: 300px;
+	background-color: rgb(255, 255, 255);
+	float: left;
+	margin-left: 0px;
+	margin-bottom: 14px;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>夜之城</title>
+    <!-- games页面 -->
+    <link rel="stylesheet" href="../css/games.css">
+    <!--默认样式-->
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!--响应式框架-->
+    <link rel="stylesheet" type="../text/css" href="../css/bootstrap.css">
+
+    <!--css3动画库-->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!--banner大图基础样式-->
+    <link rel="stylesheet" href="../css/slick.css">
+
+    <!--页面滚动基础样式-->
+    <link rel="stylesheet" href="../css/jquery.fullPage.css" />
+
+    <!--导航样式-->
+    <link rel="stylesheet" href="../css/head.css" />
+
+    <!--图片和滚屏样式-->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="../css/float.css"/>
+
+    <style>
+*{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            margin: 0 20px;
+            text-align: center;
+        }
+        /*大于1024px */
+        @media all and (min-width:1024px)
+        {
+            .box{
+                width: 1024px;
+                padding: 30px;
+                margin: 10px auto 0;
+                background-color: rgba(0, 0, 0, 0)
+            }
+            h2{
+                font-size: 28px;
+            }
+            h2 strong{
+                font-size: 14px;
+                float: right;
+                margin-right: 30px;
+            }
+            .list{
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-around;
+
+            }
+            .list li img{
+                width: 90%;
+            }
+            .list li p{
+                font-size: 30px;
+                color: aliceblue;
+            }
+        }
+        /*640px到1023px之间 */
+        @media all and (min-width:640px) and (max-width:1023px)
+        {
+            .box{
+                text-align: center;
+                width: 640px;
+                padding: 24px;
+                margin: 10px auto;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0)
+            }
+            h2{
+                font-size: 20px;
+            }
+            h2 strong{
+                font-size: 16px;
+  
+                float: right;
+                margin-right: 24px;
+            }
+            .list{
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .list li img{
+                width: 100%;
+            }
+            .list li p{
+                font-size: 14px;
+            }
+        }
+        /*320px到639px之间 */
+        @media all and (min-width:320px) and (max-width:639px)
+        {
+            .box{
+                width: 320px;
+                padding: 20px;
+                margin: 10px auto;
+                border:1px solid red;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(0, 0, 0, 0)
+            }
+            h2{
+                font-size: 22px;
+            }
+            h2 strong{
+                font-size: 18px;
+                color: #5b666b;
+                float: right;
+                margin-right: 20px;
+            }
+            .list{
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .list li img{
+                width: 100%;
+            }
+            .list li p{
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+
+<body >
+    <!-- 导航 -->
+    <header class="header">
+        <div class="container clearfix">
+            <div class="fr nav">
+                <ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li class="active">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="moives.html">
+                            电影</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">游戏</a>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">登录</a>
+                        <div class="dropdown_menu">
+                            <a href="pages/login.html">登录</a>
+                            <a href="pages/Registered.html">注册</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" id="navToggle">
+                <span></span>
+            </a>
+        </div>
+    </header>
+    <!--移动端的导航-->
+    <div class="m_nav">
+        <div class="top clearfix">
+            <img src="image/closed.png" alt="" class="closed" />
+        </div>
+        <div class="logo">
+            <img src="image/logo2.jpg" alt="" />
+        </div>
+        <ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+            <li class="active">
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="moives.html">电影</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">游戏</a>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">
+                    联系我们
+                </a>
+                <div class="dropdown_menu">
+                    <a href="#">邮箱：1258839551@qq.com</a>
+                    <a href="#">联系电话：17373246442</a>
+                    <a href="#">悄悄告诉我</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">登录</a>
+                <div class="dropdown_menu">
+                    <a href="pages/login.html">登录</a>
+                    <a href="pages/Registered.html">注册</a>
+                    <a href="#">退出</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="xx" style="	background-color: rgba(0, 0, 0, 0.5);
+	width:1500px;
+	height: 800px;
+	margin-left: 600px;
+	margin-left: 600px;
+	margin: 150PX 200PX 150PX 200PX;
+	background-size: cover;">
+          <div class="box">
+            <h2 style=" text-align: center; color: blueviolet;">热门推荐</h2>
+            <ul class="list">
+                <li>
+                    <img src="../image/赛博朋克2077.jpg" alt=""style="width: 400px;height:250px;"/>
+                    <p>赛博朋克2077</p>
+
+                </li>
+                <li>
+                    <img src="../image/文明6.jpg" alt="" style="width: 400px;height:250px;"/>
+                    <p>文明6</p>
+                </li>
+                <li>
+                    <img src="../image/GTA5.jpg" alt="" style="width: 400px;height:250px;"/>
+                    <p>GTA5</p>
+                </li>
+                <li>
+                    <img src="../image/看门狗2.jpg" alt=""style="width: 400px;height:250px;"/>
+                    <p>看门狗2 </p>
+                </li>
+            </ul>
+            <ul class="list">
+                <li>
+                    <img src="../image/巫师三.jpg" alt="" style="width: 400px;height:250px;"/>
+                    <p>巫师三</p>
+                </li>
+                <li>
+                    <img src="../image/孤岛惊魂4.jpg" alt="" style="width: 400px;height:250px;"/>
+                    <p>孤岛惊魂4</p>
+                </li>
+                <li>
+                    <img src="../image/刺客信条 奥德赛.jpg" alt="" style="width: 400px;height:250px;"/>
+                    <p>刺客信条</p>
+                </li>
+                <li>
+                    <img src="../image/尼尔机械纪元.jpg" alt="" style="width: 400px;height:250px;"/>
+                    <p>尼尔机械纪元</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
